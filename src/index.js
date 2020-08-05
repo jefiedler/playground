@@ -1,3 +1,4 @@
+import "./global.css";
 import { createTitle } from "./components/title.js";
 import { createToggleButton } from "./components/toggleButton.js";
 
