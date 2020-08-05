@@ -1,0 +1,15 @@
+:root {
+    --backgroundColor: #000;
+    --font-color: white;
+}
+
+body {
+    background-color: var(--backgroundColor);
+    color: var(--font-color);
+}
+
+button {
+    border: 1px solid #ffffff;
+    background-color: var(--backgroundColor);
+    color: var(--font-color);
+}
