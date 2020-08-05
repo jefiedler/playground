@@ -1,9 +1,17 @@
-const clickButton = document.querySelector(".btn");
+import { createElement} from "./utils/elements.js"
+
+const title = document.createElement("h1");
+title.innerHTML = "Playground";
+
+const toggleButton = createElement("button", {
+    className: "btn",
+    innerHTML: "Toggle Theme",
+});
 const rootStyle = document.documentElement.style;
 
 let isDark = true;
 
-clickButton.addEventListener("click", () => {
+toggleButton.addEventListener("click", () => {
     if (isDark){
         rootStyle.setProperty("--backgroundColor", "#fff");
         rootStyle.setProperty("--font-color", "#000");
@@ -13,3 +21,6 @@ clickButton.addEventListener("click", () => {
     }
     isDark = !isDark
 });
+
+document.body.append(title);
+document.body.append(toggleButton);
